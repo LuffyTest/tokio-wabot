@@ -34,7 +34,7 @@ let tags = {
 const defaultMenu = {
   before: `
 
-🙏🏻 Namaste %name, how can i help you?
+👋🏻(❤️ω❤️) Ohayō %name, how can i help you?
 
 🪵 Left: *%limit Limit*
 🎗️ Role: *%role*
@@ -43,7 +43,6 @@ const defaultMenu = {
 
 〽️ Prefix: *%p*
 📅 Date: *%week, %date*
-💠 Github: github.com/itsajaygaur/tokio-wabot
 
 👇🏻 All usable commands are listed below 
 
