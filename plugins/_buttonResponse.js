@@ -1,3 +1,4 @@
+// thanks to bochilgaming
 const { MessageType, newMessagesDB } = require("@adiwajshing/baileys")
 //const util = require('util')
 
