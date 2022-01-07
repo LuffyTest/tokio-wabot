@@ -17,7 +17,7 @@ ${usedPrefix + command} <open/close>
 Contoh:
 ${usedPrefix + command} Close
 ${usedPrefix + command} Open
-	`.trim(), '© Chitoge', 'Open 🍂', ',grup 1', 'Close 🍂', ',group 0', m)
+	`.trim(), '© Chitoge', 'Open', ',grup 1', 'Close', ',group 0', m)
 		throw 0
 	}
 	await conn.groupSettingChange(m.chat, GroupSettingChange.messageSend, isClose)
