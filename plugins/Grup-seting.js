@@ -14,13 +14,15 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 		await conn.send2Button(m.chat, `
 ⚠️ Use :
 
-${usedPrefix + command} <buka/tutup>
+${usedPrefix + command} <open/close>
 
 ⚠️ Example :
 
 ${usedPrefix + command} close
 ${usedPrefix + command} open
-	`.trim(), '© Chitoge 🍂', 'open', ',grup 1', 'close', ',grup 0', m)
+
+🔺 If The Botton Not Working Use The CMDs..
+ `.trim(), '© Chitoge 🍂', 'open', ',grup 1', 'close', ',grup 0', m)
 		throw 0
 	}
 	await conn.groupSettingChange(m.chat, GroupSettingChange.messageSend, isClose)
