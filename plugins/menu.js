@@ -1,29 +1,36 @@
+let levelling = require('../lib/levelling')
+let { MessageType } = require('@adiwajshing/baileys')
 let fs = require('fs')
 let path = require('path')
 let fetch = require('node-fetch')
-let levelling = require('../lib/levelling')
+let moment = require('moment-timezone')
 const thumb = fs.readFileSync('./src/thumb.jpg')
 const defaultMenu = {
   before: `
-
-👋🏻(❤️ω❤️) Ohayō %name, how can i help you?
-
-🪵 Left: *%limit Limit*
-🎗️ Role: *%role*
-🛕 Level: *%level* 
-☕ Total XP: *%totalexp*
-
-〽️ Prefix: *%p*
-📅 Date: *%week, %date*
-📡 Database: MongoDB
-
-👇🏻 All usable commands are listed below 
-
+┌─〔 %me 〕
+├ Hai, %name!
+│
+├ Tersisa *%limit Limit*
+├ Role *%role*
+├ Level *%level (%exp / %maxexp)* [%xp4levelup]
+├ %totalexp XP secara Total
+│ 
+├ Tanggal: *%week %weton, %date*
+├ Tanggal Islam: *%dateIslamic*
+├ Waktu: *%time*
+│
+├ Uptime: *%uptime (%muptime)*
+├ Database: %rtotalreg dari %totalreg
+├ Github:
+├ %github
+└────
 %readmore`.trimStart(),
-  header: '        *━━❰･%category･❱━━*',
-  body: ' 💫 %cmd %islimit %isPremium',
-  footer: ' ',
-  after: `🌟 *Hope you're enjoying bot, have a great day* 
+  header: '┌─〔 %category 〕',
+  body: '├ %cmd %islimit %isPremium',
+  footer: '└────\n',
+  after: `
+*%npmname@^%version*
+${'```%npmdesc```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
