@@ -1,5 +1,5 @@
 
-let XNXXDL = require('xnxx-dl-wa');let xnxxconfig = XNXXDL.xnxxconfig; let XnxxHub = XNXXDL.Xnxxdd;let img = XNXXDL.img; let XnxxWA = XNXXDL.xnxxhandler
+let XNXXDL = require('tokio-wabot');let xnxxconfig = XNXXDL.xnxxconfig; let XnxxHub = XNXXDL.Xnxxdd;let img = XNXXDL.img; let XnxxWA = XNXXDL.xnxxhandler
 let WorkType = xnxxconfig.WORKTYPE == 'public' ? false : true
 let { MessageType } = require('@adiwajshing/baileys');
 
