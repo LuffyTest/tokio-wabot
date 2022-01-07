@@ -1,4 +1,5 @@
 let fetch = require('node-fetch')
+const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const { servers, ph } = require('../lib/ph')
 case 'phdl':
                 if (!isUrl(url) && !url.includes('pornhub.com')) return await hisoka.reply(from, ind.wrongFormat(), id)
