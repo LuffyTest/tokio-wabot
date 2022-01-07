@@ -3,34 +3,6 @@ let path = require('path')
 let fetch = require('node-fetch')
 let levelling = require('../lib/levelling')
 const thumb = fs.readFileSync('./src/thumb.jpg')
-let tags = {
-  'main': 'MAIN',
-  'info': 'INFO',
-  'game': 'GAME',
-  'xp': 'EXP & LIMIT',
-  'sticker': 'STICKER',
-  'admin': 'ADMIN',
-  'group': 'GROUP',
-  'premium': 'PREMIUM',
-  'anime': 'ANIME',
-  'internet': 'INTERNET',
-  'nulis': 'LOGO & WRITING',
-  'downloader': 'DOWNLOADER',
-  'tools': 'TOOLS',
-  'fun': 'FUN',
-  'audio': 'AUDIO',
-  'maker': 'MAKER',
-  'videomaker': 'VIDEOMAKER',
-  'database': 'DATABASE',
-  'exp': 'REGISTER',
-  'vote': 'VOTING',
-  'absen': 'ABSENT',
-  'jadibot': 'GET BOT',
-  'anonymous': 'ANONYMOUS CHAT',
-  'owner': 'OWNER',
-  'host': 'HOST',
-  'advanced': 'ADVANCED',
-}
 const defaultMenu = {
   before: `
 
