@@ -21,8 +21,8 @@ ${usedPrefix + command} <open/close>
 ${usedPrefix + command} close
 ${usedPrefix + command} open
 
-🔺 If The Botton Not Working Use The CMDs..
- `.trim(), '© Chitoge 🍂', 'open', ',grup 1', 'close', ',grup 0', m)
+🔺 If The Bottons Not Working Use The CMDs..
+ `.trim(), '© Chitoge 🍂', 'Open', ',grup 1', 'Close', ',grup 0', m)
 		throw 0
 	}
 	await conn.groupSettingChange(m.chat, GroupSettingChange.messageSend, isClose)
