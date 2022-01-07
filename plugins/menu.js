@@ -4,7 +4,6 @@ let fs = require('fs')
 let path = require('path')
 let fetch = require('node-fetch')
 let moment = require('moment-timezone')
-const thumb = fs.readFileSync('./src/thumb.jpg')
 const defaultMenu = {
   before: `
 ┌─〔 %me 〕
