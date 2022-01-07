@@ -99,6 +99,8 @@ const { getRandom } = require('./lib/function')
                     ini_txt += `\nDescription : \n${get_result.description.replace(/__/g, "_")}`
                     thumbnail = await getBuffer(get_result.image.large)
                     await lolhuman.sendMessage(from, thumbnail, image, { quoted: lol, caption: ini_txt })
+}
+
 handler.help = ['xc']
 handler.tags = ['Porn']
 handler.command = /^(xc)$/i
