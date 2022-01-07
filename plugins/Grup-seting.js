@@ -2,18 +2,18 @@ let { GroupSettingChange } = require('@adiwajshing/baileys')
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 	let isClose = {
 		'open': false,
-		'buka': false,
+		'open': false,
 		'on': false,
 		'1': false,
 		'close': true,
-		'tutup': true,
+		'close': true,
 		'off': true,
 		'0': true,
 	}[(args[0] || '')]
 	if (isClose === undefined) {
 		await conn.send2Button(m.chat, `
 Pengunaan:
-${usedPrefix + command} <buka/tutup>
+${usedPrefix + command} <open/close>
 Contoh:
 ${usedPrefix + command} tutup
 ${usedPrefix + command} buka
