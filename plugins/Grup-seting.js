@@ -12,9 +12,9 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 	}[(args[0] || '')]
 	if (isClose === undefined) {
 		await conn.send2Button(m.chat, `
-Pengunaan:
+⚠️ Use :
 ${usedPrefix + command} <open/close>
-Contoh:
+⚠️ Example :
 ${usedPrefix + command} Close
 ${usedPrefix + command} Open
 	`.trim(), '© Chitoge', 'Open', ',grup 1', 'Close', ',group 0', m)
