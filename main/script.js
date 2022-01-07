@@ -1,7 +1,15 @@
-                case 'xhamstersearch':
+const {
+    WAConnection,
+    MessageType,
+    Presence,
+    Mimetype,
+    GroupSettingChange
+} = require('@adiwajshing/baileys')
+const { getRandom } = require('./lib/function')
+                    case 'xhamstersearch':
                     if (args.length == 0) return reply(`Example: ${prefix + command} Japanese`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/xhamstersearch?apikey=${apikey}&query=${query}`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/xhamstersearch?apikey=711994c4ea9aa5a0ec39f7f2&query=${query}`)
                     get_result = get_result.result
                     ini_txt = ""
                     for (var x of get_result) {
@@ -15,7 +23,7 @@
                 case 'xhamster':
                     if (args.length == 0) return reply(`Example: ${prefix + command} https://xhamster.com/videos/party-with-friends-end-in-awesome-fucking-5798407`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/xhamster?apikey=${apikey}&url=${query}`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/xhamster?apikey=711994c4ea9aa5a0ec39f7f2&url=${query}`)
                     get_result = get_result.result
                     ini_txt = `Title : ${get_result.title}\n`
                     ini_txt += `Duration : ${get_result.duration}\n`
@@ -37,7 +45,7 @@
                 case 'xnxxsearch':
                     if (args.length == 0) return reply(`Example: ${prefix + command} Japanese`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=${apikey}&query=${query}`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=711994c4ea9aa5a0ec39f7f2&query=${query}`)
                     get_result = get_result.result
                     ini_txt = ""
                     for (var x of get_result) {
@@ -53,7 +61,7 @@
                 case 'xnxx':
                     if (args.length == 0) return reply(`Example: ${prefix + command} https://www.xnxx.com/video-uy5a73b/mom_is_horny_-_brooklyn`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxx?apikey=${apikey}&url=${query}`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxx?apikey=711994c4ea9aa5a0ec39f7f2&url=${query}`)
                     get_result = get_result.result
                     ini_txt = `Title : ${get_result.title}\n`
                     ini_txt += `Duration : ${get_result.duration}\n`
@@ -77,7 +85,7 @@
                 case 'character':
                     if (args.length == 0) return reply(`Example: ${prefix + command} Miku Nakano`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/character?apikey=${apikey}&query=${query}`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/character?apikey=711994c4ea9aa5a0ec39f7f2&query=${query}`)
                     get_result = get_result.result
                     ini_txt = `Id : ${get_result.id}\n`
                     ini_txt += `Name : ${get_result.name.full}\n`
@@ -91,4 +99,16 @@
                     ini_txt += `\nDescription : \n${get_result.description.replace(/__/g, "_")}`
                     thumbnail = await getBuffer(get_result.image.large)
                     await lolhuman.sendMessage(from, thumbnail, image, { quoted: lol, caption: ini_txt })
-                    break
+handler.help = ['xc']
+handler.tags = ['Porn']
+handler.command = /^(xc)$/i
+handler.owner = false
+handler.mods = false
+handler.premium = false
+handler.group = false
+handler.private = false
+handler.admin = false
+handler.botAdmin = false
+handler.fail = null
+handler.limit = true
+module.exports = handler                  
