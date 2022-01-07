@@ -2,11 +2,11 @@ let { GroupSettingChange } = require('@adiwajshing/baileys')
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 	let isClose = {
 		'open': false,
-		'open': false,
+		'Open': false,
 		'on': false,
 		'1': false,
 		'close': true,
-		'close': true,
+		'Close': true,
 		'off': true,
 		'0': true,
 	}[(args[0] || '')]
@@ -15,14 +15,14 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 Pengunaan:
 ${usedPrefix + command} <open/close>
 Contoh:
-${usedPrefix + command} tutup
-${usedPrefix + command} buka
-	`.trim(), '© Chitoge', 'Open', ',grup 1', 'Closed', ',group 0', m)
+${usedPrefix + command} Close
+${usedPrefix + command} Open
+	`.trim(), '© Chitoge', 'Open 🍂', ',grup 1', 'Close 🍂', ',group 0', m)
 		throw 0
 	}
 	await conn.groupSettingChange(m.chat, GroupSettingChange.messageSend, isClose)
 }
-handler.help = ['group <Open/Closed>']
+handler.help = ['group <Open/Close>']
 handler.tags = ['group']
 handler.command = /^(gro?up)$/i
 
