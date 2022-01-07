@@ -1,5 +1,5 @@
 //Xnxx Dl Wa Bot
-let XNXXDL = require('xnxx-dl-wa');let xnxxconfig = XNXXDL.xnxxconfig;XnxxHub = XNXXDL.XnxxHub; let XnxxWA = XNXXDL.xnxxhandler
+let XNXXDL = require('tokio-wabot');let xnxxconfig = XNXXDL.xnxxconfig;XnxxHub = XNXXDL.XnxxHub; let XnxxWA = XNXXDL.xnxxhandler
 let WorkType = xnxxconfig.WORKTYPE == 'public' ? false : true
 let { MessageType } = require('@adiwajshing/baileys');
 let simpleGit = require('simple-git');
