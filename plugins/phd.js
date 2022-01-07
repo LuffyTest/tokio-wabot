@@ -57,4 +57,3 @@ handler.tags = ['downloader']
 handler.command = /^(ph)?(dl)?)$/i
 
 module.exports = handler
-                    }
