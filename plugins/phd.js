@@ -54,7 +54,5 @@ case 'phdl':
                     }
 handler.help = ['PornHub'].map(v => v + ' <url>')
 handler.tags = ['downloader']
-
 handler.command = /^(ph)?(dl)?)$/i
-
 module.exports = handler
