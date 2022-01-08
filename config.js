@@ -22,7 +22,7 @@ global.APIKeys = { // APIKey Here
   'https://pencarikode.xyz': 'pais',
   'https://api.neoxr.eu.org': '1RB98Fy9gg'
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
- }
+  }
 
 // Sticker WM
 
