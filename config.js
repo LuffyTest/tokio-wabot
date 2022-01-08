@@ -13,7 +13,7 @@ global.APIs = { // API Prefix
   zeks: 'https://api.zeks.xyz',
   pencarikode: 'https://pencarikode.xyz',
   LeysCoder: 'https://leyscoders-api.herokuapp.com'
-  neoxr: 'https://api.neoxr.eu.org',
+  
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
