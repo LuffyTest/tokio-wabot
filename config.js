@@ -1,7 +1,7 @@
 let fs = require('fs')
 let chalk = require('chalk')
 
-global.owner = ['94711392491'] // Put your number here
+global.owner = ['94611392491'] // Put your number here
 global.mods = [] // Want some help?
 global.prems = [] // Premium user has unlimited limit
 global.APIs = { // API Prefix
@@ -11,17 +11,17 @@ global.APIs = { // API Prefix
   xteam: 'https://api.xteam.xyz',
   zahir: 'https://zahirr-web.herokuapp.com',
   zeks: 'https://api.zeks.xyz',
-  neoxr: 'https://api.neoxr.eu.org',
+  pencarikode: 'https://pencarikode.xyz',
   LeysCoder: 'https://leyscoders-api.herokuapp.com'
-  }
+}
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.xteam.xyz': '284d009ce74863ed',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.xyz': 'rNOP3N9WFFY7tqbMeNp1lmWkdwLqqqq',
-  'https://api.neoxr.eu.org': '1RB98Fy9gg'
+  'https://pencarikode.xyz': 'pais',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
-  }
+}
 
 // Sticker WM
 
@@ -29,7 +29,7 @@ const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
   var sticker_name = 'I hope you\'re fine'
-  var sticker_author = 'Zero Two'
+  var sticker_author = 'Zero XD'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
