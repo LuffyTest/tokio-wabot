@@ -13,6 +13,7 @@ global.APIs = { // API Prefix
   zeks: 'https://api.zeks.xyz',
   pencarikode: 'https://pencarikode.xyz',
   LeysCoder: 'https://leyscoders-api.herokuapp.com'
+  neoxr: 'https://api.neoxr.eu.org',
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
@@ -20,6 +21,7 @@ global.APIKeys = { // APIKey Here
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.xyz': 'rNOP3N9WFFY7tqbMeNp1lmWkdwLqqqq',
   'https://pencarikode.xyz': 'pais',
+  'https://api.neoxr.eu.org': '1RB98Fy9gg'
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
