@@ -22,7 +22,7 @@ ${usedPrefix + command} close
 ${usedPrefix + command} open
 
 🔺 If The Bottons Not Working Use The CMDs..
- `.trim(), '© Chitoge 🍂', 'Open', ',grup 1', 'Close', ',grup 0', m)
+ `.trim(), '© Chitoge 🍂', 'Open 💫', '.group open', 'Close 💫', '.group close', m)
 		throw 0
 	}
 	await conn.groupSettingChange(m.chat, GroupSettingChange.messageSend, isClose)
