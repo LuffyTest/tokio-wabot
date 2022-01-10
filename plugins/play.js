@@ -29,7 +29,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 *💫 Name:* ${title}
 *▪️Audio File Size:* ${filesizeF}
 *▫️Video File Size:* ${yt2.filesizeF}
-*🔺Server y2mate:* ${usedServer}
+*🔺Server:* ${usedServer}
 `.trim(), '© Chitoge', '🔸 ᴀᴜᴅɪᴏ 🔸', `.yta ${vid.url}`, '🔹 ᴠɪᴅᴇᴏ 🔹', `.yt ${vid.url}`)
 }
 handler.help = ['play'].map(v => v + ' <pencarian>')
