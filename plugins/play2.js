@@ -17,10 +17,10 @@ let handler = async (m, { conn, command, text, isPrems, isOwner }) => {
       usedServer = server
       break
     } catch (e) {
-      m.reply(`Server ${server} error!${servers.length >= i + 1 ? '' : '\ntried another server...'}`)
+      m.reply(`Server ${server} error!${servers.length >= i + 1 ? '' : '\ntring another server...😕'}`)
     }
   }
-  if (yt === false) throw 'All servers cannot :/'
+  if (yt === false) throw 'All servers Down..Try Again Later 🥵'
   let { dl_link, thumb, title, filesize, filesizeF } = yt
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
   conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
