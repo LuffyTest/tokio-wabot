@@ -13,29 +13,12 @@ handler.all = async function (m, { conn, isBlocked }) {
         if (m.mentionedJid.includes(this.user.jid)) {
             await this.send2Button(m.chat,
                 isBanned ? 'Chitoge Not Active' : banned ? 'you are banned' : 'Chitoge Active',
-                '© stikerin',
+                '© Chitoge <3',
                 isBanned ? 'Unban' : banned ? 'Owner Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
                 m.isGroup ? '.ban' : isBanned ? '.unban' : '.donasi', m)
         }
-    }
-
-    // ketika ada yang invite/kirim link grup di chat pribadi
-    if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Open this link')) && !m.isBaileys && !m.isGroup) {
-        this.sendButton(m.chat, `┌「 *Undang Bot ke Grup* 」
-├ 7 Hari / Rp 5,000
-├ 30 Hari / Rp 10,000
-└────
-https://www.instagram.com/shelby_cer
-`.trim(), '© Chitoge', 'Owner Bot', ',owner', m)
-    }
-
-    // salam
-    let reg = /(ass?alam|اَلسَّلاَمُ عَلَيْكُمْ|السلام عليکم)/i
-    let isSalam = reg.exec(m.text)
-    if (isSalam && !m.fromMe) {
-        m.reply(`وَعَلَيْكُمْ السَّلاَمُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ\n_wa\'alaikumussalam wr.wb._`)
     }
 
     // backup db
