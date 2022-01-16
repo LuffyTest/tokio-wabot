@@ -4,6 +4,7 @@ let chalk = require('chalk')
 global.owner = ['94611392491'] // Put your number here
 global.mods = [] // Want some help?
 global.prems = [] // Premium user has unlimited limit
+global.db = 'mongodb+srv://Akame:Dulara2003@cluster0.s8qad.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
