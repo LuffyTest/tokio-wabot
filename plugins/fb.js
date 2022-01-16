@@ -25,7 +25,7 @@ let handler = async (m, { usedPrefix, command, conn, args }) => {
     }
     throw err
   }
-  if (!video) throw 'Can\t get video...'
+  if (!video) throw 'Cant get video...'
   let json = res['mp4'][index]
   let caption = `
 *Size:* ${json.fileSizeF}
