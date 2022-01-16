@@ -4,7 +4,7 @@ let handler = async (m, { conn, args, command, usedPrefix }) => {
   let { video, description, music, author } = await tiktok(args[0])
   let url = video.no_watermark || video.with_watermark || video.no_watermark_raw || music
   if (!url) throw 'Failed to fetch download url'
-  await conn.sendFile(m.chat, url, 'tiktok.mp4', `
+  await conn.sendFile(m.chat, json.videoSD, 'tiktok.mp4', '© Chitoge', m)
 - *🥀 Author:* ${author.nickname} (${author.unique_id})
 - *🍂 Description:*
 ${description}
