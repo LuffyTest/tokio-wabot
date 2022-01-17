@@ -17,6 +17,8 @@ let handler = async (m, { itsu, args }) => {
 	}
 }
 
+
+handler.help = ['test'].map(v => v + ' <url>')
 handler.command = /^get?(nhentai|hentai|doujin)$/i
-handler.tags = ['anime']
+handler.tags = ['downloader']
 module.exports = handler
