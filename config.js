@@ -31,7 +31,7 @@ global.packname = 'ShiraoriBOT Multi device'
 global.author = 'Ilman'
 global.email = 'wakabahiiro5@gmail.com'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-global.wm = '© Luff X-Md Made by Ilman'
+global.wm = '© Luff X-Md Made by Zero'
 global.media = 'https://telegra.ph/file/a36cb23c3679ed2d0127e.jpg'
 
 global.wait = '_*tunggu sedang di proses...*_'
