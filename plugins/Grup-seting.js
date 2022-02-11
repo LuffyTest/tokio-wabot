@@ -1,29 +1,35 @@
-let { Presence, GroupSettingChange } = require('@adiwajshing/baileys')
-let handler  = async (m, { conn, args, usedPrefix, command }) => {
-	let isClose = { // Switch Case Like :v
+let { GroupSettingChange } = require('@adiwajshing/baileys')
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+	let isClose = {
 		'open': false,
+		'buka': false,
+		'on': false,
+		'1': false,
 		'close': true,
+		'tutup': true,
+		'off': true,
+		'0': true,
 	}[(args[0] || '')]
-	await conn.updatePresence(m.chat, Presence.composing)
-	if (isClose === undefined)
-		throw `
-*Wrong format! Example :*
+	if (isClose === undefined) {
+		await conn.send2Button(m.chat, `
+⚠️ Use :
 
-  *○ ${usedPrefix + command} close*
-  *○ ${usedPrefix + command} open*
-`.trim()
+${usedPrefix + command} <open/close>
+
+⚠️ Example :
+
+${usedPrefix + command} close
+${usedPrefix + command} open
+
+🔺 If The Bottons Not Working Use The CMDs..
+ `.trim(), '© Chitoge 🍂', '◽️ᴏᴘᴇɴ ◽️', '.group open', '◾️ ᴄʟᴏsᴇ ◾️', '.group close', m)
+		throw 0
+	}
 	await conn.groupSettingChange(m.chat, GroupSettingChange.messageSend, isClose)
 }
-handler.help = ['group *open / close*']
+handler.help = ['grup <open/close>']
 handler.tags = ['group']
-handler.command = /^(group)$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
+handler.command = /^(gro?up)$/i
+
 handler.admin = true
 handler.botAdmin = true
-handler.fail = null
-handler.exp = 0
-module.exports = handler
