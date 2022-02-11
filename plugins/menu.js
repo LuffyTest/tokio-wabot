@@ -43,7 +43,7 @@ const defaultMenu = {
 
 〽️ Prefix: *%p*
 📅 Date: *%week, %date*
-💠 Github: github.com/itsajaygaur/tokio-wabot
+🦄 DataBase: MongoDB 🌿
 
 👇🏻 All usable commands are listed below 
 
