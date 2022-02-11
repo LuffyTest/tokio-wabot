@@ -18,7 +18,7 @@ global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.xteam.xyz': 'ea25ce2bb9efb7c5',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.zeks.me': 'apivinz',
+  'https://api.zeks.me': 'rNOP3N9WFFY7tqbMeNp1lmWkdwLqqqq',
   'https://pencarikode.xyz': 'pais',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
