@@ -96,10 +96,3 @@ async function fbdl(url) {
   })
   return results
 }
-
-handler.help = ['fb'].map(v => v + ' <url>')
-handler.tags = ['downloader']
-
-handler.command = /^f((b|acebook)(dl|download)?(er)?)$/i
-
-module.exports = handle
