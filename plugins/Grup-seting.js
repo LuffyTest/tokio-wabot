@@ -16,13 +16,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
 ${usedPrefix + command} <open/close>
 
-⚠️ Example :
-
-${usedPrefix + command} close
-${usedPrefix + command} open
-
-🔺 If The Bottons Not Working Use The CMDs..
- `.trim(), '© Chitoge 🍂', '◽️ᴏᴘᴇɴ ◽️', '.group open', '◾️ ᴄʟᴏsᴇ ◾️', '.group close', m)
+🔺 If Bottons Not showing Use CMDs..
+ `.trim(), '© Chitoge 🍂', '🅾️🅿️🅴🅽', '.group open', '🅲🅻🅾️🆂🅴', '.group close', m)
 		throw 0
 	}
 	await conn.groupSettingChange(m.chat, GroupSettingChange.messageSend, isClose)
