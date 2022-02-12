@@ -25,9 +25,10 @@ let handler = async (m, { conn, command, text, isPrems, isOwner }) => {
   let { dl_link, thumb, title, filesize, filesizeF } = yt
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
   conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
-*Title:* ${title}
-*Filesize:* ${filesizeF}
-*Source:* ${vid.url}
+🔻 𝐓𝐈𝐓𝐋𝐄 : *${title}*
+🔻 𝐅𝐈𝐋𝐄 𝐒𝐈𝐙𝐄 : *${filesizeF}*
+🔻 𝐒𝐄𝐑𝐕𝐄𝐑 : *${usedServer}*
+🔻 𝐒𝐎𝐔𝐑𝐂𝐄 : *${vid.url}*
  ${isLimit ? 'Used ': ''}
 `.trim(), m)
 let _thumb = {}
