@@ -34,9 +34,10 @@ let _thumb = {}
 try { if (isVideo) _thumb = { thumbnail: await (await fetch(thumb)).buffer() } }
 catch (e) { }
 if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp' + (3 + /2$/.test(command)), `
-*Title:* ${title}
-*Filesize:* ${filesizeF}
-*Source:* ${vid.url}
+🔻 𝐓𝐈𝐓𝐋𝐄 : *${title}*
+🔻 𝐅𝐈𝐋𝐄 𝐒𝐈𝐙𝐄 : *${filesizeF}*
+🔻 𝐒𝐄𝐑𝐕𝐄𝐑 : *${usedServer}*
+🔻 𝐒𝐎𝐔𝐑𝐂𝐄 : *${vid.url}*
 `.trim(), m, false,  {
   ..._thumb,
   asDocument: chat.useDocument
