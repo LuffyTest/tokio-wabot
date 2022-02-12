@@ -1,3 +1,4 @@
+let fetch = require('node-fetch')
 let axios = require('axios')
 const googleTTS = require('google-tts-api')
 let { MessageType}  = require('@adiwajshing/baileys')
