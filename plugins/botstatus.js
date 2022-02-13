@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
 
     m.reply(`
 ┌─「 *Status* 」
-├ Up Time ${uptime}
+├ UpTime ${uptime}
 ├ battery ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 Charging' : ''}` : 'Not known'}
 ├ *${groups.length}* Groups
 ├ *${chats.length - groups.length}* Private Chats
