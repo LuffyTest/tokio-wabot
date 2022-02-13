@@ -9,8 +9,8 @@ let handler = async (m, { conn }) => {
 
     m.reply(`
 ┌─「 *Status* 」
-├ Aktif selama ${uptime}
-├ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 Charging' : ''}` : 'Not known'}
+├ Up Time ${uptime}
+├ battery ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 Charging' : ''}` : 'Not known'}
 ├ *${groups.length}* Groups
 ├ *${chats.length - groups.length}* Private Chats
 ├ *${Object.keys(global.db.data.users).length}* Users
