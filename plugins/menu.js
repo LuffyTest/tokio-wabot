@@ -52,6 +52,7 @@ const defaultMenu = {
   body: ' 💫 %cmd %islimit %isPremium',
   footer: ' ',
   after: `🌟 *Hope you're enjoying bot, have a great day* 
+Chitoge <3
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
